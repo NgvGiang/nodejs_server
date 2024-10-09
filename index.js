@@ -22,6 +22,7 @@ const client = new OAuth2Client('1086171737744-s8mkhndpskmklbn31liqnlqoqog6mnkq.
 const routerAPI = express.Router();
 app.use('/', routerAPI); // necessary
 app.use(cors());
+
 routerAPI.post("/auth/sign_up",createUser)
 routerAPI.post("/auth/google",googleAuth)
 

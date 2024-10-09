@@ -29,7 +29,7 @@ async function verifyToken(idToken){
         const ticket = await client.verifyIdToken({
             idToken: idToken,
             // audience:'407408718192.apps.googleusercontent.com', // for google playground
-            audience: '1086171737744-s8mkhndpskmklbn31liqnlqoqog6mnkq.apps.googleusercontent.com', 
+            audience: '1086171737744-s8mkhndpskmklbn31liqnlqoqog6mnkq.apps.googleusercontent.com',
         });
         const payload = ticket.getPayload();
         const userId = payload['sub'];
